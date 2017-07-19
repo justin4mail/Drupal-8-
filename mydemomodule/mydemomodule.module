@@ -1,0 +1,11 @@
+<?php 
+function mydemomodule_theme(){
+  return array(
+    'community_form' => array(
+      'render element' => 'form',
+    ),
+    'payment_form' => array(
+      'render element' => 'form',
+    )
+  );
+}

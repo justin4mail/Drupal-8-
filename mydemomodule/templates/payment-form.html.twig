@@ -1,0 +1,71 @@
+<div class="col-md-8">
+    <div class="row">
+        <div class="col-md-12">
+            <div classs="payment_details">
+                <p><strong>Payment Type</strong></p>
+                {{ form.payment_type }}
+            </div>
+
+            {{ form.name_card }}
+            {{ form.card_number }}
+            {{ form.code }}
+        </div>
+    </div>
+    <div class="row">
+        <p>Expiration</p>
+            <div class="col-md-6">
+                <p>Month</p>
+                {{ form.expirymonth }}
+            </div>
+            <div class="col-md-6">
+                <p>Year</p>
+                {{ form.expiryyear }}
+            </div>
+    </div>
+    <div class="row">
+            <div class="col-md-12">
+                {{ form.actions }}
+            </div>
+    </div>
+</div>
+    <div class="col-md-4">
+        <p><strong>Community Details</strong></p>
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <td>Community</td>
+                    <td>{{ form.preview['#markup'].community }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <p><strong>Contact Details</strong></p>
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <td>Address</td>
+                    <td>{{ form.preview['#markup'].address }}</td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>{{ form.preview['#markup'].city }}</td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td>{{ form.preview['#markup'].state }}</td>
+                </tr>
+                <tr>
+                    <td>Coutry</td>
+                    <td>{{ form.preview['#markup'].country }}</td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+</div>
+{# required to render form properly #}
+{{ form.form_token}}
+{{ form.form_build_id }}
+{{ form.form_id }}

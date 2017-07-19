@@ -1,0 +1,6 @@
+mydemomodule.form:
+  title: Community
+  description: 'Join Communities'
+  parent: main
+  route_name: mydemomodule.community
+  menu_name: main

@@ -1,0 +1,4 @@
+name: My demo module
+description: Multi form submission sample done by Krishna Sigh 
+type: module
+core: '8.x'

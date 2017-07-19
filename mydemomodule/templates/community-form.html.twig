@@ -1,0 +1,37 @@
+
+
+<div class="row">
+    <div class="col-md-8">
+        <h2 calss="page-heading">Community Details</h2>
+        <div class="community">
+            {{ form.community }}
+        </div>
+        <div class="address">
+            <h4>Mailing Address</h4>
+            <p>This will be used for correspondence with your community.</p>
+            {{ form.country }}
+            {{ form.attention_to }}
+            {{ form.company }}
+            {{ form.address }}
+            {{ form.city }}
+            {{ form.state }}
+        </div>
+        <div class="promocode">
+            <h4>Promo code</h4>
+            <p>If you have a promotional code, enter it here.</p>
+            {{ form.promocode }}
+        </div>
+        <div class="student">
+            <h4>Student member</h4>
+            <p>Are you a full time student?</p>
+            {{ form.is_student }}
+        </div>
+        {{ form.actions }}
+    </div>
+    <div class="col-md-4"></div>
+
+</div>
+{# required to render form properly #}
+{{ form.form_token}}
+{{ form.form_build_id }}
+{{ form.form_id }}

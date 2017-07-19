@@ -1,0 +1,14 @@
+mydemomodule.community:
+  path: '/mydemomodule/community'
+  defaults:
+    _form: '\Drupal\mydemomodule\Form\Multistep\CommunityForm'
+    _title: 'Community'
+  requirements:
+    _permission: 'access content'
+mydemomodule.payment:
+  path: '/mydemomodule/payment'
+  defaults:
+    _form: '\Drupal\mydemomodule\Form\Multistep\PaymentForm'
+    _title: 'Payment'
+  requirements:
+    _permission: 'access content'
